@@ -8,7 +8,7 @@ const highlights = [
   { icon: '💻', title: 'Frontend Dev', desc: 'React, Next.js & modern CSS' },
   { icon: '🔧', title: 'Full Stack', desc: 'Node.js, Express & databases' },
   { icon: '🤖', title: 'AI / ML', desc: 'Python, Pandas & NumPy' },
-  { icon: '🎨', title: 'Design', desc: 'Figma & visual storytelling' },
+  { icon: '🧠', title: 'DSA', desc: 'Data Structures, Algorithms & Problem Solving' },
 ]
 
 export default function About() {
@@ -40,7 +40,7 @@ export default function About() {
               Beyond frontend, I'm growing my interest in AI/ML and data visualization — building intelligent solutions and presenting insights through clean, meaningful interfaces.
             </p>
             <p>
-              Outside tech, I express creativity through editing, dancing, and photography, which directly shapes my design sensibility and attention to detail.
+              Outside tech, I express creativity through content creation, dancing, and photography, which directly shapes my design sensibility and attention to detail.
             </p>
           </div>
 
