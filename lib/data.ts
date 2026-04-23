@@ -2,37 +2,37 @@ export const nav = ['About', 'Skills', 'Projects', 'Stack', 'Contact']
 
 export const skills = [
   {
-    icon: '⚡',
+    icon: '',
     label: 'Languages',
     color: 'lavender',
     items: ['JavaScript', 'TypeScript', 'Python', 'C++', 'Java'],
   },
   {
-    icon: '🎨',
+    icon: '',
     label: 'Frontend',
     color: 'blue',
     items: ['React.js', 'Next.js', 'HTML5', 'CSS3', 'Tailwind CSS'],
   },
   {
-    icon: '🔧',
+    icon: '',
     label: 'Backend',
     color: 'peach',
     items: ['Node.js', 'Express.js', 'Firebase', 'Prisma', 'MySQL'],
   },
   {
-    icon: '🤖',
+    icon: '',
     label: 'AI / ML',
     color: 'lavender',
     items: ['Pandas', 'NumPy', 'Scikit-learn', 'Data Analysis', 'ML Models'],
   },
   {
-    icon: '🛠️',
+    icon: '',
     label: 'Tools',
     color: 'blue',
     items: ['Figma', 'Git', 'VS Code', 'Postman', 'REST APIs'],
   },
   {
-    icon: '📐',
+    icon: '',
     label: 'Concepts',
     color: 'peach',
     items: ['DSA', 'OOP', 'DBMS', 'Web Dev', 'Data Viz'],
@@ -42,7 +42,7 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    icon: '✅',
+    icon: '',
     title: 'ToDo List App',
     description: 'A clean, responsive task management application focused on simplicity and usability for daily productivity.',
     tech: ['React', 'JavaScript', 'CSS'],
@@ -55,7 +55,7 @@ export const projects = [
   },
   {
     id: 2,
-    icon: '💰',
+    icon: '',
     title: 'Finance Tracker',
     description: 'Personal finance management — track expenses, monitor savings, and analyze spending patterns with interactive charts.',
     tech: ['React', 'JavaScript', 'Chart.js', 'CSS'],
@@ -68,7 +68,7 @@ export const projects = [
   },
   {
     id: 3,
-    icon: '🧠',
+    icon: '',
     title: 'AI / ML Project',
     description: 'A predictive machine learning model solving real-world classification problems through data analysis and feature engineering.',
     tech: ['Python', 'Pandas', 'NumPy', 'Scikit-learn'],

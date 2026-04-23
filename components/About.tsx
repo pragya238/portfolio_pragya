@@ -5,10 +5,10 @@ import { useRef } from 'react'
 import Image from 'next/image'
 
 const highlights = [
-  { icon: '💻', title: 'Frontend Dev', desc: 'React, Next.js & modern CSS' },
-  { icon: '🔧', title: 'Full Stack', desc: 'Node.js, Express & databases' },
-  { icon: '🤖', title: 'AI / ML', desc: 'Python, Pandas & NumPy' },
-  { icon: '🧠', title: 'DSA', desc: 'Data Structures, Algorithms & Problem Solving' },
+  { icon: '', title: 'Frontend Dev', desc: 'React, Next.js & modern CSS' },
+  { icon: '', title: 'Full Stack', desc: 'Node.js, Express & databases' },
+  { icon: '', title: 'AI / ML', desc: 'Python, Pandas & NumPy' },
+  { icon: '', title: 'DSA', desc: 'Data Structures, Algorithms & Problem Solving' },
 ]
 
 export default function About() {
