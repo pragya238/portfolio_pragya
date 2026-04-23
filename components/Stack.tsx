@@ -107,21 +107,21 @@ export default function Stack() {
           {[
             {
               title: 'Frontend',
-              icon: '🎨',
+              icon: '',
               desc: 'React & Next.js with Tailwind CSS — building responsive, animated, accessible interfaces.',
               items: ['React.js', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Framer Motion'],
               bg: '#f2eefb',
             },
             {
               title: 'Backend',
-              icon: '⚙️',
+              icon: '',
               desc: 'Node.js & Express APIs with Prisma ORM, MySQL, and Firebase for real-time features.',
               items: ['Node.js', 'Express.js', 'Prisma', 'MySQL', 'Firebase'],
               bg: '#e0eef7',
             },
             {
               title: 'AI / ML',
-              icon: '🤖',
+              icon: '',
               desc: 'Python data pipelines with Pandas, NumPy, and Scikit-learn for intelligent solutions.',
               items: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Data Viz'],
               bg: '#fbeee8',
