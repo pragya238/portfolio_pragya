@@ -42,7 +42,7 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-  icon: '',
+  icon: '🌐',
   title: 'Modern Multi-Page Website',
   description: 'A fully responsive multi-page website built as a fullstack assignment. Focuses on clean UI, structured layout, and real-world website design with smooth navigation and modern styling.',
   tech: ['HTML', 'CSS', 'JavaScript', 'React'],
@@ -60,7 +60,7 @@ export const projects = [
   },
   {
     id: 2,
-    icon: '',
+    icon: '💰',
     title: 'Finance Tracker',
     description: 'Personal finance management — track expenses, monitor savings, and analyze spending patterns with interactive charts.',
     tech: ['React', 'JavaScript', 'Chart.js', 'CSS'],
@@ -73,7 +73,7 @@ export const projects = [
   },
   {
     id: 3,
-    icon: '',
+    icon: '🤖',
     title: 'AI / ML Project',
     description: 'A predictive machine learning model solving real-world classification problems through data analysis and feature engineering.',
     tech: ['Python', 'Pandas', 'NumPy', 'Scikit-learn'],
