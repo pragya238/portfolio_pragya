@@ -42,16 +42,21 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    icon: '',
-    title: 'ToDo List App',
-    description: 'A clean, responsive task management application focused on simplicity and usability for daily productivity.',
-    tech: ['React', 'JavaScript', 'CSS'],
-    features: ['Interactive & dynamic UI', 'Real-time task updates', 'Fully responsive design'],
-    live: 'https://todolist-sand-xi-58.vercel.app/',
-    code: 'https://github.com/pragya238/todoList',
-    gradient: 'from-lavender-soft to-lavender-light',
-    accent: '#c9b8e8',
-    status: 'live',
+  icon: '',
+  title: 'Modern Multi-Page Website',
+  description: 'A fully responsive multi-page website built as a fullstack assignment. Focuses on clean UI, structured layout, and real-world website design with smooth navigation and modern styling.',
+  tech: ['HTML', 'CSS', 'JavaScript', 'React'],
+  features: [
+    'Responsive multi-page layout',
+    'Modern UI/UX design',
+    'Reusable components structure',
+    'Clean and scalable codebase'
+  ],
+  live: 'https://fullstack-assignment-xi.vercel.app/',
+  code: 'https://github.com/pragya238/fullstack_assignment',
+  gradient: 'from-peach-soft to-orange-light',
+  accent: '#ff9a8b',
+  status: 'live',
   },
   {
     id: 2,
