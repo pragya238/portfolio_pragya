@@ -42,21 +42,21 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-  icon: '🌐',
-  title: 'Modern Multi-Page Website',
-  description: 'A fully responsive multi-page website built as a fullstack assignment. Focuses on clean UI, structured layout, and real-world website design with smooth navigation and modern styling.',
-  tech: ['HTML', 'CSS', 'JavaScript', 'React'],
-  features: [
-    'Responsive multi-page layout',
-    'Modern UI/UX design',
-    'Reusable components structure',
-    'Clean and scalable codebase'
-  ],
-  live: 'https://fullstack-assignment-xi.vercel.app/',
-  code: 'https://github.com/pragya238/fullstack_assignment',
-  gradient: 'from-peach-soft to-orange-light',
-  accent: '#ff9a8b',
-  status: 'live',
+    icon: '🧩',
+    title: 'FormFit — Upload Preparation Studio',
+    description: 'A local-first tool that turns confusing upload requirements into a clear checklist, prepares images and PDFs, and verifies the result before submission.',
+    tech: ['Next.js', 'TypeScript', 'PDF.js', 'Tesseract.js', 'RAG'],
+    features: [
+      'Reads format, size, and dimension requirements',
+      'Converts and previews images and PDFs locally',
+      'OCR for requirements captured in screenshots',
+      'Installable app and Chrome/Edge extension',
+    ],
+    live: 'https://formfit-pragya.divyanshkashyap2023.chatgpt.site/',
+    code: 'https://github.com/pragya238/formfit',
+    gradient: 'from-peach-soft to-orange-light',
+    accent: '#c44421',
+    status: 'live',
   },
   {
     id: 2,
