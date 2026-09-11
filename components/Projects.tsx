@@ -20,9 +20,14 @@ function ProjectSnapshot({ project }: { project: Project }) {
             <div className="snapshot-cards"><span /><span /><span /></div>
           </div>
         ) : kind === 'finance' ? (
-          <div className="snapshot-page">
-            <div className="snapshot-nav"><b>Finance Track</b><span>Overview</span><span>Budgets</span><i /></div>
-            <div className="snapshot-dashboard"><small>MONTHLY OVERVIEW</small><strong>Spend with clarity.</strong><div className="snapshot-metrics"><span><b>₹24.8k</b><small>spent this month</small></span><span><b>₹8.2k</b><small>left to budget</small></span><span><b>72%</b><small>on track</small></span></div><div className="snapshot-chart"><i /><i /><i /><i /><i /><i /><i /><i /></div></div>
+          <div className="snapshot-page snapshot-auth-page">
+            <div className="snapshot-auth-logo"><span>₹</span><b>FinanceTracker</b></div>
+            <div className="snapshot-auth-title">Welcome back</div>
+            <div className="snapshot-auth-subtitle">Sign in to your account</div>
+            <div className="snapshot-auth-field"><small>EMAIL</small><span>you@example.com</span></div>
+            <div className="snapshot-auth-field"><small>PASSWORD</small><span>••••••••</span></div>
+            <div className="snapshot-auth-button">Sign in</div>
+            <div className="snapshot-auth-footer">Don't have an account? <b>Create one</b></div>
           </div>
         ) : (
           <div className="snapshot-page">
