@@ -4,6 +4,37 @@ import { motion, useInView } from 'framer-motion'
 import { ExternalLink, Github, Clock } from 'lucide-react'
 import { projects } from '@/lib/data'
 
+
+type Project = (typeof projects)[number]
+
+function ProjectSnapshot({ project }: { project: Project }) {
+  const kind = project.id === 1 ? 'formfit' : project.id === 2 ? 'finance' : 'ml'
+  return (
+    <div className={`project-snapshot snapshot-${kind}`} aria-label={`${project.title} homepage preview`}>
+      <div className="snapshot-window">
+        <div className="snapshot-browserbar"><span className="snapshot-dots"><i /><i /><i /></span><span className="snapshot-url">project preview</span><span className="snapshot-menu">•••</span></div>
+        {kind === 'formfit' ? (
+          <div className="snapshot-page">
+            <div className="snapshot-nav"><b>FormFit</b><span>Workspace</span><span>Why FormFit</span><i /></div>
+            <div className="snapshot-formfit-hero"><div><small>THE LAST STEP BEFORE SUBMIT</small><strong>Make your next upload <em>fit.</em></strong><span className="snapshot-line" /></div><div className="snapshot-upload"><b>↑</b><span>Drop your file here</span></div></div>
+            <div className="snapshot-cards"><span /><span /><span /></div>
+          </div>
+        ) : kind === 'finance' ? (
+          <div className="snapshot-page">
+            <div className="snapshot-nav"><b>Finance Track</b><span>Overview</span><span>Budgets</span><i /></div>
+            <div className="snapshot-dashboard"><small>MONTHLY OVERVIEW</small><strong>Spend with clarity.</strong><div className="snapshot-metrics"><span><b>₹24.8k</b><small>spent this month</small></span><span><b>₹8.2k</b><small>left to budget</small></span><span><b>72%</b><small>on track</small></span></div><div className="snapshot-chart"><i /><i /><i /><i /><i /><i /><i /><i /></div></div>
+          </div>
+        ) : (
+          <div className="snapshot-page">
+            <div className="snapshot-nav"><b>ML Studio</b><span>Experiments</span><span>Models</span><i /></div>
+            <div className="snapshot-ml"><small>MODEL WORKSPACE</small><strong>Find the signal.</strong><div className="snapshot-model-row"><span><b>94.2%</b><small>validation accuracy</small></span><span><b>12</b><small>features selected</small></span></div><div className="snapshot-bars"><i /><i /><i /><i /><i /><i /></div></div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function Projects() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
@@ -48,16 +79,7 @@ export default function Projects() {
                 </span>
               )}
 
-              {/* Visual banner */}
-              <div
-                className={`h-40 flex items-center justify-center bg-gradient-to-br ${project.gradient} relative overflow-hidden`}
-              >
-                <span className="text-5xl group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 filter drop-shadow-md">
-                  {project.icon}
-                </span>
-                {/* shimmer */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
-              </div>
+              <ProjectSnapshot project={project} />
 
               <div className="p-6 bg-white">
                 {/* Tech pills */}
