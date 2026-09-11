@@ -52,7 +52,7 @@ export const projects = [
       'OCR for requirements captured in screenshots',
       'Installable app and Chrome/Edge extension',
     ],
-    live: 'https://formfit-pragya.divyanshkashyap2023.chatgpt.site/',
+    live: 'https://formfit-chi.vercel.app/',
     code: 'https://github.com/pragya238/formfit',
     gradient: 'from-peach-soft to-orange-light',
     accent: '#c44421',
