@@ -20,14 +20,21 @@ function ProjectSnapshot({ project }: { project: Project }) {
             <div className="snapshot-cards"><span /><span /><span /></div>
           </div>
         ) : kind === 'finance' ? (
-          <div className="snapshot-page snapshot-auth-page">
-            <div className="snapshot-auth-logo"><span>₹</span><b>FinanceTracker</b></div>
-            <div className="snapshot-auth-title">Welcome back</div>
-            <div className="snapshot-auth-subtitle">Sign in to your account</div>
-            <div className="snapshot-auth-field"><small>EMAIL</small><span>you@example.com</span></div>
-            <div className="snapshot-auth-field"><small>PASSWORD</small><span>••••••••</span></div>
-            <div className="snapshot-auth-button">Sign in</div>
-            <div className="snapshot-auth-footer">Don't have an account? <b>Create one</b></div>
+          <div className="snapshot-page snapshot-finance-dashboard">
+            <div className="snapshot-finance-top">
+              <div className="snapshot-finance-brand"><span>₹</span><b>FinanceTracker</b></div>
+              <small>This month</small>
+            </div>
+            <div className="snapshot-finance-kicker">MY MONEY / SEPTEMBER 2026</div>
+            <strong className="snapshot-finance-greeting">Good evening, Pragya ✦</strong>
+            <p className="snapshot-finance-subtitle">Here is your financial picture for this month.</p>
+            <div className="snapshot-finance-note">A little check-in <b>Small steps add up.</b></div>
+            <div className="snapshot-finance-stats">
+              <span className="snapshot-finance-balance"><b>₹910</b><small>balance</small></span>
+              <span className="snapshot-finance-income"><b>₹1,000</b><small>income</small></span>
+              <span className="snapshot-finance-expense"><b>₹90</b><small>expenses</small></span>
+            </div>
+            <div className="snapshot-finance-flow"><small>THIS MONTH</small><b>Cash flow</b><i /><i /></div>
           </div>
         ) : (
           <div className="snapshot-page">
