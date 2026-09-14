@@ -84,7 +84,7 @@ export default function Projects() {
             Things I've<br /><em className="text-ink-mid">built</em>
           </h2>
           <p className="mt-4 text-ink-soft text-[0.88rem] max-w-lg leading-relaxed">
-            A selection of projects across everyday tools, personal finance, open-source contributions, and machine learning — each built with care for usability and design.
+            A selection of projects across everyday tools, personal finance, and open-source contributions — each built with care for usability and design.
           </p>
         </motion.div>
 

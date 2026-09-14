@@ -94,19 +94,6 @@ export const projects = [
     accent: '#31745b',
     status: 'live',
   },
-  {
-    id: 3,
-    icon: '🤖',
-    title: 'AI / ML Project',
-    description: 'A predictive machine learning model solving real-world classification problems through data analysis and feature engineering.',
-    tech: ['Python', 'Pandas', 'NumPy', 'Scikit-learn'],
-    features: ['Predictive classification model', 'Data preprocessing pipeline', 'Visual insight reporting'],
-    live: null,
-    code: null,
-    gradient: 'from-peach-soft to-[#fde0d0]',
-    accent: '#f5cdb8',
-    status: 'coming-soon',
-  },
 ]
 
 export const stack = [
