@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Contribly's miniature dashboard keeps its mint-and-cream visual identity. */
+.snapshot-contribly-dashboard { display: grid; grid-template-columns: 29% 1fr; height: calc(100% - 18px); overflow: hidden; background: #fff9e7; color: #20251f; }
+.snapshot-contribly-sidebar { display: flex; flex-direction: column; gap: 8px; padding: 10px 6px; background: #a9d7b8; border-right: 1px solid #20251f; font-size: 5px; }
+.snapshot-contribly-sidebar > b { display: flex; align-items: center; gap: 3px; font-size: 8px; margin-bottom: 5px; }
+.snapshot-contribly-sidebar > span { padding: 3px; }
+.snapshot-contribly-active { background: #20251f; color: #fff9e7; }
+.snapshot-contribly-sidebar > small { margin-top: auto; font-size: 4px; }
+.snapshot-contribly-main { min-width: 0; padding: 10px; }
+.snapshot-contribly-main > small { font: 700 4px monospace; letter-spacing: .6px; }
+.snapshot-contribly-main > strong { display: block; margin-top: 5px; font: 700 15px/1.05 Georgia, serif; letter-spacing: -.3px; }
+.snapshot-contribly-main > p { margin-top: 4px; font-size: 5px; }
+.snapshot-contribly-filters { display: flex; gap: 4px; margin-top: 8px; font-size: 5px; }
+.snapshot-contribly-filters > * { padding: 3px 6px; border: 1px solid #20251f; }
+.snapshot-contribly-filters > b { background: #f6ce49; box-shadow: 1px 1px #20251f; }
+.snapshot-contribly-issue { display: flex; flex-direction: column; gap: 4px; margin-top: 7px; padding: 6px; background: #fffdf5; border: 1px solid #20251f; box-shadow: 2px 2px #20251f; }
+.snapshot-contribly-issue > small { width: fit-content; background: #f4c2ed; padding: 2px 3px; font: 700 4px monospace; }
+.snapshot-contribly-issue > b { font-size: 7px; }
+.snapshot-contribly-issue > span { display: flex; justify-content: space-between; font-size: 4px; }
+.snapshot-contribly-issue i { font-style: normal; }
+
 :root {
   --lavender: #c9b8e8;
   --lavender-light: #e8e0f5;

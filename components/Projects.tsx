@@ -1,14 +1,14 @@
 'use client'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { ExternalLink, Github, Clock } from 'lucide-react'
+import { ExternalLink, Github, Clock, GitBranch } from 'lucide-react'
 import { projects } from '@/lib/data'
 
 
 type Project = (typeof projects)[number]
 
 function ProjectSnapshot({ project }: { project: Project }) {
-  const kind = project.id === 1 ? 'formfit' : project.id === 2 ? 'finance' : 'ml'
+  const kind = project.id === 1 ? 'formfit' : project.id === 2 ? 'finance' : project.id === 4 ? 'contribly' : 'ml'
   return (
     <div className={`project-snapshot snapshot-${kind}`} aria-label={`${project.title} homepage preview`}>
       <div className="snapshot-window">
@@ -35,6 +35,22 @@ function ProjectSnapshot({ project }: { project: Project }) {
               <span className="snapshot-finance-expense"><b>₹90</b><small>expenses</small></span>
             </div>
             <div className="snapshot-finance-flow"><small>THIS MONTH</small><b>Cash flow</b><i /><i /></div>
+          </div>
+        ) : kind === 'contribly' ? (
+          <div className="snapshot-contribly-dashboard">
+            <div className="snapshot-contribly-sidebar">
+              <b><GitBranch size={11} /> contribly.</b>
+              <span className="snapshot-contribly-active">Discover issues</span>
+              <span>Saved issues</span><span>My contributions</span><span>My skills</span>
+              <small>Small steps. Real impact.</small>
+            </div>
+            <div className="snapshot-contribly-main">
+              <small>YOUR OPEN-SOURCE JOURNEY</small>
+              <strong>Your first contribution<br />starts here.</strong>
+              <p>Find an issue. Make a difference.</p>
+              <div className="snapshot-contribly-filters"><b>For you</b><span>GSoC</span><span>LFX</span></div>
+              <div className="snapshot-contribly-issue"><small>GOOD FIRST ISSUE</small><b>Make the docs a little clearer</b><span>Documentation <i>Save issue ↗</i></span></div>
+            </div>
           </div>
         ) : (
           <div className="snapshot-page">
@@ -68,7 +84,7 @@ export default function Projects() {
             Things I've<br /><em className="text-ink-mid">built</em>
           </h2>
           <p className="mt-4 text-ink-soft text-[0.88rem] max-w-lg leading-relaxed">
-            A selection of projects across task management, personal finance, and machine learning — each built with care for usability and design.
+            A selection of projects across everyday tools, personal finance, open-source contributions, and machine learning — each built with care for usability and design.
           </p>
         </motion.div>
 
